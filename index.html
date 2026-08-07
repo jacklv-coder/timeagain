@@ -1,48 +1,118 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>简洁万年历 - 技术支持</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            max-width: 800px;
-            margin: auto;
-        }
-        h1, h2 {
-            color: #333;
-        }
-        a {
-            color: #007BFF;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="时序万年历技术支持、常见问题与联系方式。">
+  <title>时序万年历｜技术支持</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --accent: #ef5360;
+      --accent-soft: #fff0f1;
+      --ink: #241f1f;
+      --muted: #736b68;
+      --line: #eee4df;
+      --surface: rgba(255, 255, 255, 0.94);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", "Microsoft YaHei", sans-serif;
+      background:
+        radial-gradient(circle at 10% 5%, rgba(239, 83, 96, 0.15), transparent 30rem),
+        radial-gradient(circle at 95% 90%, rgba(255, 180, 120, 0.18), transparent 28rem),
+        #fffaf6;
+      line-height: 1.75;
+    }
+    main { width: min(880px, calc(100% - 32px)); margin: 0 auto; padding: 56px 0 72px; }
+    .hero, section {
+      background: var(--surface);
+      border: 1px solid rgba(255, 255, 255, 0.9);
+      border-radius: 26px;
+      box-shadow: 0 18px 50px rgba(78, 48, 38, 0.08);
+    }
+    .hero { padding: 42px; margin-bottom: 22px; }
+    .badge {
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 999px;
+      color: var(--accent);
+      background: var(--accent-soft);
+      font-weight: 650;
+      font-size: 14px;
+    }
+    h1 { margin: 18px 0 10px; font-size: clamp(34px, 6vw, 52px); line-height: 1.18; }
+    h2 { margin: 0 0 18px; font-size: 24px; }
+    h3 { margin: 0 0 6px; font-size: 18px; }
+    p { margin: 8px 0; color: var(--muted); }
+    section { padding: 30px 34px; margin-top: 18px; }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+    .item { padding: 18px; border: 1px solid var(--line); border-radius: 18px; background: #fff; }
+    a { color: var(--accent); text-decoration: none; font-weight: 600; }
+    a:hover { text-decoration: underline; }
+    .contact { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 18px; }
+    .button { display: inline-block; padding: 11px 18px; border-radius: 14px; background: var(--accent); color: white; }
+    .button.secondary { background: var(--accent-soft); color: var(--accent); }
+    footer { padding: 30px 4px 0; text-align: center; color: #9a918d; font-size: 14px; }
+    @media (max-width: 640px) {
+      main { padding-top: 24px; }
+      .hero, section { padding: 24px; border-radius: 22px; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 <body>
-    <h1>简洁万年历 - 技术支持</h1>
-    <p>感谢您使用简洁万年历！如果您在使用过程中遇到任何问题，请随时联系我们。</p>
+  <main>
+    <header class="hero">
+      <span class="badge">纯净无广告日历</span>
+      <h1>时序万年历技术支持</h1>
+      <p>感谢使用时序万年历。如果你在日历、日程、重要日、提醒或桌面小组件的使用中遇到问题，可以通过本页面找到解决方法或联系我们。</p>
+      <div class="contact">
+        <a class="button" href="mailto:time_support@aliyun.com?subject=时序万年历问题反馈">发送邮件</a>
+        <a class="button secondary" href="https://jacklv-coder.github.io/time/">查看隐私政策</a>
+      </div>
+    </header>
 
-    <h2>常见问题</h2>
-    <ul>
-        <li><strong>如何切换公历和农历？</strong><br>在主界面点击日期即可快速切换。</li>
-        <li><strong>为什么我的节假日提醒没有生效？</strong><br>请检查通知权限是否已开启。</li>
-    </ul>
+    <section>
+      <h2>常见问题</h2>
+      <div class="grid">
+        <article class="item">
+          <h3>如何切换首页样式？</h3>
+          <p>打开“设置”，进入“日历首页”，即可在“日历”和“传统万年历”之间切换。</p>
+        </article>
+        <article class="item">
+          <h3>如何添加桌面小组件？</h3>
+          <p>长按 iPhone 或 iPad 主屏幕空白处，点击“添加小组件”，搜索“时序万年历”，再选择喜欢的尺寸。</p>
+        </article>
+        <article class="item">
+          <h3>为什么提醒没有生效？</h3>
+          <p>请在系统“设置 → 通知 → 时序万年历”中允许通知，并确认对应日程或重要日已开启提醒。</p>
+        </article>
+        <article class="item">
+          <h3>如何显示日程或重要日？</h3>
+          <p>在 App 设置中开启相应的日历显示选项；小组件可以在主屏幕长按后通过“编辑小组件”单独配置。</p>
+        </article>
+        <article class="item">
+          <h3>如何删除日程或重要日？</h3>
+          <p>先进入对应项目的详情页，再点击删除。为防止误操作，删除前会再次确认。</p>
+        </article>
+        <article class="item">
+          <h3>照片和日历数据保存在哪里？</h3>
+          <p>日程、重要日、设置和用户选择的照片保存在设备本地及 App 与小组件共享的本地空间，不会用于广告。</p>
+        </article>
+      </div>
+    </section>
 
-    <h2>有任何问题都可以联系</h2>
+    <section>
+      <h2>联系我们</h2>
+      <p>你也可以在 App 的“设置 → 意见反馈”中提交问题。为了方便定位，请尽量描述操作步骤、设备型号和系统版本；联系方式为选填。</p>
+      <p>支持邮箱：<a href="mailto:time_support@aliyun.com">time_support@aliyun.com</a></p>
+      <p>我们会将功能建议、错误报告和小组件问题纳入后续版本评估。</p>
+    </section>
 
-    <h2>联系我们</h2>
-    <p>
-        邮箱：<a href="time_support@aliyun.com">time_support@aliyun.com</a><br>
-        微信公众号：简洁万年历
-    </p>
-
-    <h2>隐私政策</h2>
-    <p>我们的应用不会收集任何用户数据>隐私政策</a>。</p>
+    <footer>最后更新：2026 年 8 月 7 日 · 时序万年历</footer>
+  </main>
 </body>
 </html>
